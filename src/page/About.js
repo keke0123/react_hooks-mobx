@@ -1,6 +1,7 @@
 import React from "react";
 import { useObserver } from "mobx-react";
-import useStore from "../store";
+// import useStore from "../store";
+import useStore from "../context/useStore";
 
 export default function About() {
   const { counter, user } = useStore();
