@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 //
 import Home from "./page/Home";
 import About from "./page/About";
+// ant design 적용
+import "antd/dist/antd.css";
 
 function App() {
   return (
