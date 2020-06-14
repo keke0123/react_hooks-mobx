@@ -1,38 +1,23 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 //
-
+// import Home from "./page/Home";
+// import About from "./page/About";
+import Todo from "./page/Todo";
 //
-import Home from "./page/Home";
-import About from "./page/About";
+import "./App.scss";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </nav>
-
+    <div className={`app-container`}>
+      <Router>
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/">
-            <Home />
+          <Route exact path="/">
+            <Todo />
           </Route>
         </Switch>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

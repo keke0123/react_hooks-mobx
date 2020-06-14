@@ -1,0 +1,16 @@
+body {
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-container {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  min-height: 90vh;
+  border: 1px solid tomato;
+}
